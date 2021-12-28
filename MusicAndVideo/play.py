@@ -91,7 +91,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**🔄 Memproses**")
+            huehue = await replied.reply("**🔄 𝗽𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴❤️🇮🇳**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -106,12 +106,12 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
+                    photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-**#⃣ Lagu Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({link})
+**#⃣ Song In Queue {pos}
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
             else:
@@ -126,12 +126,12 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/6213d2673486beca02967.png",
+                    photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Mulai Memutar Lagu
-🏷️ Judul: [{songname}]({link})
+**▶ Start Playing Song
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
 
@@ -140,11 +140,11 @@ async def play(client, m: Message):
             await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
         else:
             await m.delete()
-            huehue = await m.reply("🔎 Pencarian")
+            huehue = await m.reply("🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴❤️🇮🇳")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await huehue.edit("`Tidak Menemukan Apapun untuk Kueri yang Diberikan`")
+                await huehue.edit("`☹️ 𝗞𝘂𝗰𝗵 𝗻𝗶 𝗺𝗶𝗹𝗮 !! 𝗦𝗼𝗻𝗴 𝗻𝗮𝗺𝗲 𝗼𝗿 𝗹𝗶𝗻𝗸 𝗳𝗶𝗿𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝗸𝗿𝗼❤️🇮🇳`")
             else:
                 songname = search[0]
                 title = search[0]
@@ -166,11 +166,11 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-**#⃣ Lagu Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({url})
-⏱️ Durasi: {duration}
+**#⃣ Song In Queue {pos}
+🏷️ Title: [{songname}]({url})
+⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 On request: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -188,11 +188,11 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Mulai Memutar Lagu
-🏷️ Judul: [{songname}]({url})
-⏱️ Durasi: {duration}
+**▶ Start Playing Song
+🏷️ Title: [{songname}]({url})
+⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 On request: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -207,7 +207,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**🔄 Memproses**")
+            huehue = await replied.reply("**🔄 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴❤️🇮🇳**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -219,7 +219,7 @@ async def vplay(client, m: Message):
                 else:
                     Q = 720
                     await huehue.edit(
-                        "`Hanya 720, 480, 360 Diizinkan` \n`Sekarang Streaming masuk 720p`"
+                        "`Only 720, 480, 360 Allowed` \n` 𝗡𝗼𝘄  𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝗘𝗻𝘁𝗲𝗿❤️🇮🇳 720p`"
                     )
 
             if replied.video:
@@ -232,12 +232,12 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
+                    photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-**#⃣ Video Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({link})
+**#⃣ Videos in queue {pos}
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
             else:
@@ -256,30 +256,30 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/6213d2673486beca02967.png",
+                    photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Mulai Memutar Video
-🏷️ Judul: [{songname}]({link})
+**▶ Start Playing Video
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 Atas permintaan: {m.from_user.mention}**
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
 
     else:
         if len(m.command) < 2:
             await m.reply(
-                "**Balas ke File Audio atau berikan sesuatu untuk Pencarian**"
-            )
+                "** Reply to Audio File or give something for Search **"
+             )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Pencarian")
+            huehue = await m.reply("**🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
                 await huehue.edit(
-                    "**Tidak Menemukan Apa pun untuk Kueri yang Diberikan**"
+                    "**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝗳𝗼𝗿 𝗴𝗶𝘃𝗲𝗻 𝗾𝘂𝗲𝗿𝘆☹️**"
                 )
             else:
                 songname = search[0]
@@ -302,11 +302,11 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-**#⃣ Video Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({url})
-⏱️ Durasi: {duration}
+**#⃣ Videos in queue {pos}
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({url})
+⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -322,11 +322,11 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Mulai Memutar Video
-🏷️ Judul: [{songname}]({url})
-⏱️ Durasi: {duration}
+**▶ Start Playing Video
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({url})
+⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -338,7 +338,7 @@ async def playfrom(client, m: Message):
     chat_id = m.chat.id
     if len(m.command) < 2:
         await m.reply(
-            f"**PENGGUNAAN:** \n\n`{HNDLR}playfrom [chat_id/username]` \n`{HNDLR}playfrom [chat_id/username]`"
+            f"**Use:** \n\n`{HNDLR}playfrom [chat_id/username]` \n`{HNDLR}playfrom [chat_id/username]`"
         )
     else:
         args = m.text.split(maxsplit=1)[1]
@@ -350,7 +350,7 @@ async def playfrom(client, m: Message):
             limit = 10
             lmt = 9
         await m.delete()
-        hmm = await m.reply(f"🔎 Mengambil {limit} Lagu Acak Dari {chat}**")
+        hmm = await m.reply(f"🔎 Taken {limit} Random Song From {chat}**")
         try:
             async for x in bot.search_messages(chat, limit=limit, filter="audio"):
                 location = await x.download()
@@ -370,17 +370,17 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/6213d2673486beca02967.png",
+                        photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                         caption=f"""
-**▶ Mulai Memutar Lagu Dari {chat}
-🏷️ Judul: [{songname}]({link})
+**▶ 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗩𝗶𝗱𝗲𝗼 {chat}
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 Atas Permintaan: {m.from_user.mention}**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
             await m.reply(
-                f"➕ Menambahkan {lmt} Lagu Ke Dalam Antrian\n• Klik {HNDLR}playlist Untuk Melihat Daftar Putar**"
+                f"➕ Add {lmt} Song Into the Queue\n• Click {HNDLR}playlist To View Playlist**"
             )
         except Exception as e:
             await hmm.edit(f"**ERROR** \n`{e}`")
@@ -398,7 +398,7 @@ async def playlist(client, m: Message):
                 disable_web_page_preview=True,
             )
         else:
-            QUE = f"**🎧 SEKARANG MEMUTAR:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ DAFTAR ANTRIAN:**"
+            QUE = f"**🎧 NOW PLAYING:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ DAFTAR ANTRIAN:**"
             l = len(chat_queue)
             for x in range(1, l):
                 hmm = chat_queue[x][0]
@@ -407,4 +407,4 @@ async def playlist(client, m: Message):
                 QUE = QUE + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`\n"
             await m.reply(QUE, disable_web_page_preview=True)
     else:
-        await m.reply("**❌ Tidak memutar apapun**")
+        await m.reply("**❌ Doesn't play anything**")
