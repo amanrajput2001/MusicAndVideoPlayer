@@ -40,7 +40,7 @@ async def ping(client, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
-        f"<b>🏓 PONG</b> `{delta_ping * 1000:.3f} ms` \n<b>⏳ AKTIF</b> - `{uptime}`"
+        f"<b>🏓 PONG</b> `{delta_ping * 1000:.3f} ms` \n<b>⏳ ACTIVE</b> - `{uptime}`"
     )
 
 
@@ -58,7 +58,7 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ Userbot Di Mulai Ulang**")
+    await loli.edit("**✅ Userbot Restarted**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -69,20 +69,20 @@ async def help(client, m: Message):
     HELP = f"""
 <b>👋 Hallo {m.from_user.mention}!
 
-🛠 MENU BANTUAN
+🛠 MENU HELP
 
-⚡ PERINTAH UNTUK SEMUA ORANG
-• {HNDLR}play [judul lagu | link youtube | balas file audio] - untuk memutar lagu
-• {HNDLR}vplay [judul video | link youtube | balas file video] - untuk memutar video
-• {HNDLR}playlist untuk melihat daftar putar
-• {HNDLR}ping - untuk cek status
-• {HNDLR}help - untuk melihat daftar perintah
+⚡ FOR EVERYONE
+• {HNDLR}play [song Name | link youtube | reply file audio] - to play a song
+• {HNDLR}vplay [Video Song Name | link youtube | reply file video] - to play videos
+• {HNDLR}playlist to view playlist
+• {HNDLR}ping - To check status
+• {HNDLR}help - to see a list of commands
 
-⚡ PERINTAH UNTUK SEMUA ADMIN
-• {HNDLR}resume - untuk melanjutkan pemutaran lagu atau video
-• {HNDLR}pause - untuk untuk menjeda pemutaran lagu atau video
-• {HNDLR}skip - untuk melewati lagu atau video
-• {HNDLR}end - untuk mengakhiri pemutaran</b>
+⚡ FOR SUDO AND ADMIN
+• {HNDLR}resume - To continue playing a song or video
+• {HNDLR}pause - To pause song or video
+• {HNDLR}skip - To skip song or  video
+• {HNDLR}end - To end song and userbot will leave the vc</b>
 """
     await m.reply(HELP)
 
@@ -91,52 +91,52 @@ async def help(client, m: Message):
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
-<b>👋 Hallo {m.from_user.mention}!
+<b>👋 Hello {m.from_user.mention}!
 
-🎶 Music Dan Video Player UserBot
+🎶 Music And Video Player UserBot
 
-🤖 Telegram UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.
+🤖 Telegram UserBot To Play Songs And Videos In Telegram Voice Chat.
 
-✨ Dipersembahkan Oleh 
-• [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
-• [Pyrogram](https://github.com/pyrogram/pyrogram)
+✨ Presented by 
+• [AMAN RAJPUT](https://t.me/itsamanrajput)
+• [SUPPORT GROUP](https://t.me/join_us_fast)
 
 
-📝 Persyaratan
+📝 Condition
 • Python 3.8+
 • FFMPEG
 • Nodejs v16+
 
-🛠 MENU BANTUAN
+🛠 MENU HELP
 
-⚡ PERINTAH UNTUK SEMUA ORANG
-• `/play [judul lagu | link youtube | balas file audio]` - untuk memutar lagu
-• `/vplay [judul video | link youtube | balas file video]` - untuk memutar video
-• `/playlist` untuk melihat daftar putar
-• `/ping` - untuk cek status
-• `/help` - untuk melihat daftar perintah
+⚡ ORDER FOR EVERYONE
+• `/play [SONG NAME | link youtube | REPLY file audio]` - To play audio song
+• `/vplay [Video song Name | link youtube | reply file video]` - To play video
+• `/playlist` To view playlist
+• `/ping` - To check status
+• `/help` - To view commands
 
-⚡ PERINTAH UNTUK SEMUA ADMIN
-• `/resume` - untuk melanjutkan pemutaran lagu atau video
-• `/pause` - untuk untuk menjeda pemutaran lagu atau video
-• `/skip` - untuk melewati lagu atau video
-• `/end` - untuk mengakhiri pemutaran
+⚡ ORDER FOR ALL ADMIN
+• `/resume` - To start playing song or video
+• `/pause` - To Pause song or video
+• `/skip` - To skip song or video
+• `/end` - To end songs and userbot will leave the vc
 
 💡 Deployment
 
 💜 Heroku
 
- [𝗗𝗘𝗣𝗟𝗢𝗬 𝗞𝗘 𝗛𝗘𝗥𝗢𝗞𝗨](https://heroku.com/deploy?template=https://github.com/XtomiSN/MusicAndVideoPlayer)
+ [𝗗𝗘𝗣𝗟𝗢𝗬 To𝗘 𝗛𝗘𝗥𝗢𝗞𝗨](https://heroku.com/deploy?template=https://github.com/amanrajput2001/musicuserbot2.0)
 
-📚 Variabel Yang Dibutuhkan
-• `API_ID` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-• `API_HASH` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-• `SESSION` - Sesi String Pyrogram. Dapatkan String Dari [Sini](https://replit.com/@GoodBoysExe/string-session?lite=1&outputonly=1)
-• `SUDO_USER` - ID Akun Telegram Yang Digunakan Sebagai Admin
+📚 Variable Required
+• `API_ID` - Get From [my.telegram.org](https://my.telegram.org)
+• `API_HASH` - Get From [my.telegram.org](https://my.telegram.org)
+• `SESSION` - Create String Pyrogram. Create it From  [Sini](https://replit.com/@GoodBoysExe/string-session?lite=1&outputonly=1)
+• `SUDO_USER` - ID Of Telegram Account Used As  Admin
 
 
-🔥 KREDIT 
-• [Dan](https://github.com/delivrance) untuk [Pyrogram](https://github.com/pyrogram/pyrogram)
-• [Laky](https://github.com/Laky-64) untuk [PyTgCalls](https://github.com/pytgcalls/pytgcalls)</b>
+🔥 CREDIT 
+• No ANY CREDIT TO ANYONE</b>
 """
     await m.reply(REPO, disable_web_page_preview=True)
+
