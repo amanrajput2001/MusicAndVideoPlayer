@@ -137,7 +137,7 @@ async def play(client, m: Message):
 
     else:
         if len(m.command) < 2:
-            await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
+            await m.reply("reply to any audio file or give a sone name or yt link")
         else:
             await m.delete()
             huehue = await m.reply("🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴❤️🇮🇳")
