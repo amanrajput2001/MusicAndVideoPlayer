@@ -11,11 +11,11 @@ from config import HNDLR, SUDO_USERS
 # System Uptime
 START_TIME = datetime.utcnow()
 TIME_DURATION_UNITS = (
-    ("Minggu", 60 * 60 * 24 * 7),
-    ("Hari", 60 * 60 * 24),
-    ("Jam", 60 * 60),
-    ("Menit", 60),
-    ("Detik", 1),
+    ("Sunday", 60 * 60 * 24 * 7),
+    ("Day", 60 * 60 * 24),
+    ("Hour", 60 * 60),
+    ("Minute", 60),
+    ("second", 1),
 )
 
 
