@@ -81,7 +81,7 @@ async def on_end_handler(_, update: Update):
         await skip_current_song(chat_id)
 
 
-# Ketika seseorang mengakhiri Obrolan Suara tanpa menghentikan Pemutaran
+# When someone ends Voice Chat without stopping Playback
 
 
 @call_py.on_closed_voice_chat()
