@@ -67,7 +67,7 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>👋 Hallo {m.from_user.mention}!
+<b>👋 Hello {m.from_user.mention}!
 
 🛠 MENU HELP
 
@@ -93,13 +93,13 @@ async def repo(client, m: Message):
     REPO = f"""
 <b>👋 Hello {m.from_user.mention}!
 
-🎶 Music And Video Player UserBot
+🎶 this is an  MusicAndVideo  Player bot made by @itzamanrajput
 
 🤖 Telegram UserBot To Play Songs And Videos In Telegram Voice Chat.
 
 ✨ Presented by 
-• [AMAN RAJPUT](https://t.me/itsamanrajput)
-• [SUPPORT GROUP](https://t.me/join_us_fast)
+• [AMAN RAJPUT](https://t.me/itzamanrajput)
+• [SUPPORT GROUP](https://t.me/himu_ki_jaan)
 
 
 📝 Condition
