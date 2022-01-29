@@ -272,7 +272,7 @@ async def vplay(client, m: Message):
              )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴")
+            huehue = await m.reply("**🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 ❤️🚩")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -394,11 +394,11 @@ async def playlist(client, m: Message):
         if len(chat_queue) == 1:
             await m.delete()
             await m.reply(
-                f"**🎧 SEKARANG MEMUTAR:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`",
+                f"**🎧 𝐍𝐨𝐰 𝐏𝐥𝐚𝐲𝐢𝐧𝐠💝🚩:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`",
                 disable_web_page_preview=True,
             )
         else:
-            QUE = f"**🎧 NOW PLAYING:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ xyz:**"
+            QUE = f"**🎧 NOW PLAYING🚩❤️:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ xyz:**"
             l = len(chat_queue)
             for x in range(1, l):
                 hmm = chat_queue[x][0]
