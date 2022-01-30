@@ -125,12 +125,12 @@ async def repo(client, m: Message):
 
 💡 Deployment
 
-💜 Repo <a href="https://www.google.com/search?q=chala+ja+bsdk&oq=chala+&aqs=chrome.0.69i59j69i57j0i67i433j0i20i263i512j0i273j0i512l2j46i433i512j46i512j0i271.1363j0j7&client=ms-android-vivo&sourceid=chrome-mobile&ie=UTF-8#imgdii=OxWUPwkC2gB9KM&imgrc=0f58nJTJhiq-gM")
+💜 [Repo](https://te.legra.ph/file/ed4827b2f815cd2730ba3.jpg) 
 
 📚 Variable Required
 • `API_ID` - Get From [my.telegram.org](https://my.telegram.org)
 • `API_HASH` - Get From [my.telegram.org](https://my.telegram.org)
-• `SESSION` - Create String Pyrogram. Create it From  [Sini](https://replit.com/@GoodBoysExe/string-session?lite=1&outputonly=1)
+• `SESSION` - Create String Pyrogram. Create it From  [String](https://replit.com/@amanrajput2001/Pyrogram-String-session?lite=1&outputonly=1)
 • `SUDO_USER` - ID Of Telegram Account Used As  Admin
 
 
