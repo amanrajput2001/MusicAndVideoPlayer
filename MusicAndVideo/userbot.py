@@ -65,7 +65,9 @@ async def restart(client, m: Message):
 
 @Client.on_message(filters.command(["help"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
-    await m.delete()
+    await m.delete() 
+await m.reply_photo(
+   photo="https://te.legra.ph/file/aa915680035591e8612e9.jpg",
     HELP = f"""
 <b>👋 Hello {m.from_user.mention}!
 
@@ -85,11 +87,14 @@ async def help(client, m: Message):
 • {HNDLR}end - To end song and userbot will leave the vc</b>
 """
     await m.reply(HELP)
+)
 
 
 @Client.on_message(filters.command(["repo"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
+await m.reply_photo(
+   photo="https://te.legra.ph/file/aa915680035591e8612e9.jpg",
     REPO = f"""
 <b>👋 Hello {m.from_user.mention}!
 
@@ -138,4 +143,5 @@ async def repo(client, m: Message):
 @A_B_HA_Y ODU BRO❤️ </b>
 """
     await m.reply(REPO, disable_web_page_preview=True)
+  )
 
