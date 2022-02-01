@@ -297,3 +297,16 @@ async def vsong(client, message: Message):
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
+keyboard = InlineKeyboardMarkup
+         [
+            [
+                InlineKeyboardButton
+                text="owner",
+                url=f"https://t.me/itzamanrajput"),
+                 InlineKeyboardButton(
+                            text="group⭐",
+                            url=f"https://t.me/himu_ki_jaan")
+            ]
+         ]
+    )
+            
