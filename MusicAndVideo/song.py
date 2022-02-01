@@ -9,7 +9,6 @@ import aiofiles
 import aiohttp
 import wget
 from pyrogram import Client, filters
-from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
@@ -298,16 +297,4 @@ async def vsong(client, message: Message):
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
-keyboard = InlineKeyboardMarkup
-         [
-            [
-                InlineKeyboardButton
-                text="owner",
-                url=f"https://t.me/itzamanrajput"),
-                 InlineKeyboardButton(
-                            text="group⭐",
-                            url=f"https://t.me/himu_ki_jaan")
-            ]
-         ]
-    )
-            
+
