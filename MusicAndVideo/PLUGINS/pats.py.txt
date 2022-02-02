@@ -3,9 +3,9 @@ import asyncio
 import aiohttp
 from pyrogram import filters
 from pyrogram.types import Message
-from userbot import UserBot
-from userbot.helpers.PyroHelpers import ReplyCheck, GetChatID
-from userbot.plugins.help import add_command_help
+from MusicAndVideo import MusicAndVideo
+from MusicAndVideo.helpers.PyroHelpers import ReplyCheck, GetChatID
+from MusicAndVideo.helpers.help import add_command_help
 
 
 @UserBot.on_message(filters.command(["pat", "pats"], ".") & filters.me)
