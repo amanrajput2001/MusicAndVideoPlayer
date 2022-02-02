@@ -5,12 +5,12 @@
 # PM_PERMIT, PM_LIMIT
 from pyrogram import filters
 from pyrogram.types import Message
-from userbot import UserBot
+from MusicAndVideo import MusicAndVideo
 
 
 # from pyrogram.errors import FloodWait
-# from userbot.plugins.help import add_command_help
-# from userbot.database.pmpermit import PmPermit
+# from MusicAndVideo.plugins.help import add_command_help
+# from MusicAndVideo.helpers.pmpermit import PmPermit
 # from time import sleep
 #
 #
