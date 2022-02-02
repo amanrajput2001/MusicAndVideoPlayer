@@ -4,8 +4,8 @@ from functools import partial
 from pyrogram import filters
 from pyrogram.types import Message
 
-from userbot import UserBot
-from userbot.plugins.help import add_command_help
+from MusicAndVideo import MusicAndVideo
+from MusicAndVideo.helpers.help import add_command_help
 
 mention = partial("<a href='tg://user?id={}'>{}</a>".format)
 
