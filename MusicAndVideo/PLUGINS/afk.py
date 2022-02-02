@@ -5,9 +5,9 @@ import humanize
 from pyrogram import filters
 from pyrogram.types import Message
 
-from userbot import UserBot
-from userbot.helpers.PyroHelpers import GetChatID, ReplyCheck
-from userbot.plugins.help import add_command_help
+from MusicAndVideo import MusicAndVideo
+from MusicAndVideo.helpers.PyroHelpers import GetChatID, ReplyCheck
+from MusicAndVideo.helpers.help import add_command_help
 
 AFK = False
 AFK_REASON = ""
