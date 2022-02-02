@@ -41,14 +41,7 @@ async def ping(client, m: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
         f"<b>🏓 PONG</b> `{delta_ping * 1000:.3f} ms` \n<b>⏳ ACTIVE</b> - `{uptime}`"
-    )
-
- @Client.on_message(filters.command(["alive"], prefixes=f"{HNDLR}"))
-async def alive(client, m: Message):
-  alive_msg = await message.edit_text("`Processing...`")
-  alive_pic = "MusicAndVideo/helpers/other/choose/rrc.png"
-  await message.reply_photo(alive_pic, caption=f"**🌀 Aman music uerbot is alive 🌀** \n\n**🤖 '  \n\n**🐬 Info**\n ↳**[support group](https://t.me/himu_ki_jaan):**  \n ↳**Owner:** [Click Here](https://t.me/itzamanrajput")
-  await alive_msg.delete()   
+    ) 
     
 
 @Client.on_message(
