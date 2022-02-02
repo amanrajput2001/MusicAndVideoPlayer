@@ -8,8 +8,8 @@ from pyrogram.types import Message, User
 from pyrogram.errors import PeerIdInvalid
 
 from MusicAndVideo import MusicAndVideo
-from userbot.helpers.PyroHelpers import ReplyCheck
-from userbot.plugins.help import add_command_help
+from MusicAndVideo.helpers.PyroHelpers import ReplyCheck
+from MusicAndVideo.helpers.help import add_command_help
 
 WHOIS = (
     '**WHO IS "{full_name}"?**\n'
