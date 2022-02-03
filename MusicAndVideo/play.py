@@ -112,7 +112,7 @@ async def play(client, m: Message):
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻:  [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
             else:
@@ -133,7 +133,7 @@ async def play(client, m: Message):
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
 
@@ -173,7 +173,7 @@ async def play(client, m: Message):
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
 🎧 On request: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                         )
                     else:
@@ -196,7 +196,7 @@ async def play(client, m: Message):
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
 🎧 On request: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                             )
                         except Exception as ep:
@@ -242,7 +242,7 @@ async def vplay(client, m: Message):
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
             else:
@@ -267,7 +267,7 @@ async def vplay(client, m: Message):
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
 
@@ -313,7 +313,7 @@ async def vplay(client, m: Message):
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
 🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                         )
                     else:
@@ -334,7 +334,7 @@ async def vplay(client, m: Message):
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
 🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                             )
                         except Exception as ep:
@@ -384,7 +384,7 @@ async def playfrom(client, m: Message):
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                     )
             await hmm.delete()
