@@ -108,7 +108,7 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-**#⃣ Song In Queue {pos}
+** 𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
@@ -129,7 +129,7 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Start Playing Song
+**▶ Started  Playing Song
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
@@ -191,7 +191,7 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Start Playing Song
+**▶ Started Playing Song
 🏷️ Title: [{songname}]({url})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
@@ -263,7 +263,7 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Start Playing Video
+**▶ Started Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
@@ -329,7 +329,7 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Start Playing Video
+**▶ Started Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({url})
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
