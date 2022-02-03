@@ -54,7 +54,7 @@ async def stop(client, m: Message):
         except Exception as e:
             await m.reply(f"**ERROR** \n`{e}`")
     else:
-        await m.reply("**❌ 𝗸𝘂𝗰𝗵 𝗻𝗵𝗶 𝗰𝗵𝗮𝗹 𝗿𝗵𝗮 𝗯𝗰😡!**")
+        await m.reply("**❌ 𝗸𝘂𝗰𝗵 𝗻𝗵𝗶 𝗰𝗵𝗮𝗹 𝗿𝗵𝗮 🙁!**")
 
 
 @Client.on_message(filters.command(["pause"], prefixes=f"{HNDLR}"))
@@ -71,7 +71,7 @@ async def pause(client, m: Message):
         except Exception as e:
             await m.reply(f"**ERROR** \n`{e}`")
     else:
-        await m.reply("** ❌ 𝗸𝘂𝗰𝗵 𝗻𝗵𝗶 𝗰𝗵𝗮𝗹 𝗿𝗵𝗮 𝗯𝗰😡!**")
+        await m.reply("** ❌ 𝗸𝘂𝗰𝗵 𝗻𝗵𝗶 𝗰𝗵𝗮𝗹 𝗿𝗵𝗮 😡!**")
 
 
 @Client.on_message(filters.command(["resume"], prefixes=f"{HNDLR}"))
