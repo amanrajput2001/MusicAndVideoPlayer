@@ -142,7 +142,7 @@ async def play(client, m: Message):
             await m.reply("reply to any audio file or give a sone name or yt link")
         else:
             await m.delete()
-            huehue = await m.reply("🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴❤️🇮🇳")
+            huehue = await m.reply("🔎 ")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -278,7 +278,7 @@ async def vplay(client, m: Message):
              )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 ❤️🚩")
+            huehue = await m.reply("**🔎 ")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
