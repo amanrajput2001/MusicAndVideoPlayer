@@ -26,7 +26,7 @@ async def song(client, message: Message):
             "Invalid Command Syntax Please Check Help Menu To Know More!"
         )
         return
-    pablo = await client.send_message(message.chat.id, f"**🔎 searching** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"**🔎 ** `{urlissed}`")
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
     mio = mi["search_result"]
@@ -65,7 +65,7 @@ async def song(client, message: Message):
         return
     c_time = time.time()
     capy = f"""
-**🏷️ Song Name:**u [{thum}]({mo})
+**🏷️ Song Name:** [{thum}]({mo})
 **🎧 Request by:** {message.from_user.mention}
 """
     file_stark = f"{ytdl_data['id']}.mp3"
@@ -235,7 +235,7 @@ def time_to_seconds(time):
 async def vsong(client, message: Message):
     urlissed = get_text(message)
 
-    pablo = await client.send_message(message.chat.id, f"**🔎 searching** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"**🔎 ** `{urlissed}`")
     if not urlissed:
         await pablo.edit(
             "Invalid Command Syntax Please Check Help Menu To Know More!"
