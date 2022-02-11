@@ -108,7 +108,7 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-**  𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
+** 𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
@@ -168,7 +168,7 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-**  𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
+** 𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
@@ -238,12 +238,11 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-** 
-┣★ Videos in queue {pos}
-┣★🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
-┣★💬 Chat ID: {chat_id}
-┣★🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-┣★👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+** Videos in queue {pos}
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
+💬 Chat ID: {chat_id}
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
+👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
 """,
                 )
             else:
