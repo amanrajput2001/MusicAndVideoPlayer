@@ -108,11 +108,11 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-** 𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
+**#⃣ Song In Queue {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
             else:
@@ -129,11 +129,11 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Started  Playing Song
+**▶ Start Playing Song
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
 
@@ -168,12 +168,12 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-** 𝐒𝐨𝐧𝐠 𝐈𝐧 𝐐𝐮𝐞𝐮𝐞 {pos}
-🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
+**#⃣ Song In Queue {pos}
+🏷️ Title: [{songname}]({url})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+🎧 On request: {m.from_user.mention}
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                         )
                     else:
@@ -191,12 +191,12 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-** ▶️ Started  Playing Song
-🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
-┣★⏱️ Duration: {duration}
-┣★💬 Chat ID: {chat_id}
-┣★🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-┣★👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+**▶ Start Playing Song
+🏷️ Title: [{songname}]({url})
+⏱️ Duration: {duration}
+💬 Chat ID: {chat_id}
+🎧 On request: {m.from_user.mention  
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                             )
                         except Exception as ep:
@@ -242,7 +242,7 @@ async def vplay(client, m: Message):
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                 )
             else:
@@ -263,7 +263,7 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-** ▶️ Started playing video
+**▶️ Started playing video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
@@ -308,12 +308,12 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-**  Videos in queue {pos}
+** Videos in queue {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+👨‍💻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                         )
                     else:
@@ -329,12 +329,12 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-** ▶ Started  Playing Video
+**▶ Started  Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                             )
                         except Exception as ep:
@@ -380,11 +380,11 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                         caption=f"""
-** ▶ Started  Playing Video
+**▶ Started  Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput) **
+👨‍💻𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
 """,
                     )
             await hmm.delete()
