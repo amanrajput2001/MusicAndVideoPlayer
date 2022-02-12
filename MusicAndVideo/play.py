@@ -108,11 +108,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-**🎵 Song In Queue {pos}
+**#⃣ Song In Queue {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👉🏻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
             else:
@@ -129,11 +128,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Start Playing Song
+**▶ Started Playing Song
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👉🏻 𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
 
@@ -142,11 +140,13 @@ async def play(client, m: Message):
             await m.reply("reply to any audio file or give a sone name or yt link")
         else:
             await m.delete()
-            huehue = await m.reply("🔎 ")
+            huehue = await m.reply("🔎")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await huehue.edit("`☹️ 𝗞𝘂𝗰𝗵 𝗻𝗶 𝗺𝗶𝗹𝗮 !! 𝗦𝗼𝗻𝗴 𝗻𝗮𝗺𝗲 𝗼𝗿 𝗹𝗶𝗻𝗸 𝗳𝗶𝗿𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝗸𝗿𝗼❤️🇮🇳`")
+                await huehue.edit(
+                    "`☹️ 𝗞𝘂𝗰𝗵 𝗻𝗶 𝗺𝗶𝗹𝗮 !! 𝗦𝗼𝗻𝗴 𝗻𝗮𝗺𝗲 𝗼𝗿 𝗹𝗶𝗻𝗸 𝗳𝗶𝗿𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝗸𝗿𝗼❤️🇮🇳`"
+                )
             else:
                 songname = search[0]
                 title = search[0]
@@ -168,12 +168,11 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-**🎵 Song In Queue {pos}
+**#⃣ Song In Queue {pos}
 🏷️ Title: [{songname}]({url})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
-🎧 On request: {m.from_user.mention}
-👉🏻 𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 On request: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -191,12 +190,11 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Start Playing Song
+**▶ Started Playing Song
 🏷️ Title: [{songname}]({url})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
-🎧 On request: {m.from_user.mention  
-👉🏻 𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 On request: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -238,11 +236,10 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/bf58fd416041cf781db9a.jpg",
                     caption=f"""
-** Videos in queue {pos}
+**#⃣ Videos in queue {pos}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👉🏻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
             else:
@@ -263,30 +260,25 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶️ Started playing video
+**▶ Started Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-👉🏻 𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                 )
 
     else:
         if len(m.command) < 2:
-            await m.reply(
-                "** Reply to Audio File or give something for Search **"
-             )
+            await m.reply("** Reply to Audio File or give something for Search **")
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 ")
+            huehue = await m.reply("**🔎")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
-                await huehue.edit(
-                    "**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝗳𝗼𝗿 𝗴𝗶𝘃𝗲𝗻 𝗾𝘂𝗲𝗿𝘆☹️**"
-                )
+                await huehue.edit("**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝗳𝗼𝗿 𝗴𝗶𝘃𝗲𝗻 𝗾𝘂𝗲𝗿𝘆☹️**")
             else:
                 songname = search[0]
                 title = search[0]
@@ -308,12 +300,11 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumb}",
                             caption=f"""
-** Videos in queue {pos}
-🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
+**#⃣ Videos in queue {pos}
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({url})
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}
-👉🏻 PANCHI MUSUC:[𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -329,12 +320,11 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Started  Playing Video
-🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
+**▶ Started Playing Video
+🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({url})
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-👉🏻 𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -380,11 +370,10 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                         caption=f"""
-**▶ Started  Playing Video
+**▶ 𝗦𝘁𝗮𝗿𝘁𝗲𝗱ed 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗩𝗶𝗱𝗲𝗼 {chat}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention} 
-👉🏻 𝐏𝐚𝐧𝐜𝐡𝐢 𝐌𝐮𝐬𝐢c: [𝗢𝘄𝗻𝗲𝗿](https://t.me/itzamanrajput)**
+🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
