@@ -128,7 +128,7 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Started Playing Song
+**▶ Start Playing Song
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
@@ -140,7 +140,7 @@ async def play(client, m: Message):
             await m.reply("reply to any audio file or give a sone name or yt link")
         else:
             await m.delete()
-            huehue = await m.reply("🔎")
+            huehue = await m.reply("🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴❤️🇮🇳")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -190,7 +190,7 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Started Playing Song
+**▶ Start Playing Song
 🏷️ Title: [{songname}]({url})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
@@ -260,7 +260,7 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                     caption=f"""
-**▶ Started Playing Video
+**▶ Start Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗼𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
@@ -272,7 +272,7 @@ async def vplay(client, m: Message):
             await m.reply("** Reply to Audio File or give something for Search **")
         else:
             await m.delete()
-            huehue = await m.reply("**🔎")
+            huehue = await m.reply("**🔎 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 ❤️🚩")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -320,14 +320,14 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumb}",
                                 caption=f"""
-**▶ Started Playing Video
+**▶ Start Playing Video
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({url})
 ⏱️ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: {duration}
 💬 Chat ID: {chat_id}
 🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
 """,
                             )
-                     except Exception as ep:
+                        except Exception as ep:
                             await huehue.edit(f"`{ep}`")
 
 
@@ -370,7 +370,7 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://te.legra.ph/file/7419d3b88d2b1972e54b3.jpg",
                         caption=f"""
-**▶ 𝗦𝘁𝗮𝗿𝘁𝗲𝗱ed 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗩𝗶𝗱𝗲𝗼 {chat}
+**▶ 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗩𝗶𝗱𝗲𝗼 {chat}
 🏷️ 𝗧𝗶𝘁𝗹𝗲: [{songname}]({link})
 💬 Chat ID: {chat_id}
 🎧 𝗢𝗻 𝗿𝗲𝗾𝘂𝗲𝘀𝘁: {m.from_user.mention}**
@@ -406,3 +406,4 @@ async def playlist(client, m: Message):
             await m.reply(QUE, disable_web_page_preview=True)
     else:
         await m.reply("**❌ Doesn't play anything**")
+
