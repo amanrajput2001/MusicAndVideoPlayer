@@ -45,7 +45,7 @@ async def ping(client, m: Message):
     
 
 @Client.on_message(
-    filters.user(SUDO_USERS) & filters.command(["restart"], prefixes=f"{HNDLR}")
+    filters.user(SUDO_USERS) & filters.command(["prestart"], prefixes=f"{HNDLR}")
 )
 async def restart(client, m: Message):
     await m.delete()
@@ -58,7 +58,7 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ Userbot Restarted**")
+    await loli.edit("**✅ Panchi music Userbot Restarted**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
