@@ -69,15 +69,16 @@ async def help(client, m: Message):
     HELP = f"""
 <b>👋 Hello {m.from_user.mention}!
 
-🛠 MENU HELP
+🛠 HELP MENU
 
 ⚡ FOR EVERYONE
-• {HNDLR}play [song Name | link youtube | reply file audio] - to play a song
+• {HNDLR}play [song Name | youtube link | reply to audio  file] - to play a song
 • {HNDLR}vplay [Video Song Name | link youtube | reply file video] - to play videos
 • {HNDLR}playlist to view playlist
 • {HNDLR}ping - To check status
 • {HNDLR}help - to see a list of commands
-
+• {HNDLR}song - to download the song in the group or Dm
+• {HNDLR}vsong - to download video song in the group or dm
 ⚡ FOR SUDO AND ADMIN
 • {HNDLR}resume - To continue playing a song or video
 • {HNDLR}pause - To pause song or video
@@ -113,6 +114,8 @@ async def repo(client, m: Message):
 ⚡ ORDER FOR EVERYONE
 • `/play [SONG NAME | link youtube | REPLY file audio]` - To play audio song
 • `/vplay [Video song Name | link youtube | reply file video]` - To play video
+•  /song - to download the song in the group or Dm
+•  /vsong - to download video song in the group or dm
 • `/playlist` To view playlist
 • `/ping` - To check status
 • `/help` - To view commands
@@ -135,7 +138,7 @@ async def repo(client, m: Message):
 
 
 🔥 CREDIT 
-• @fUckEd_uP_bY_LiFE BROTHER ❤️
+• @thorus_slugram ❤️
 @A_B_HA_Y ODU BRO❤️ </b>
 """
     await m.reply(REPO, disable_web_page_preview=True)
