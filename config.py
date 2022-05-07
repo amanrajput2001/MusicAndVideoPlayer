@@ -11,7 +11,7 @@ if os.path.exists(".env"):
 # Necessary Vars
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
-SESSION = os.getenv("BQBqm6Gmadzmm-xQfHRllXUYY_CtYAv_CnQDdAa_NGZuvxvkcq_d6iiDTYUPbnekZdGzuxE1hAoihMP2vtG_VSOJj8bwEnY_Elu2dZRZH9AkZ_zbDFF2nhdlSjz4AfO4q2UZ2STMnjCBPQqGJ7Kyb_aXiErlZJNlIIsn8XFIMg3iUgQ1BSaCHc3ovi96m3izAhPSkyPQgxmhfkwFnWUy6PZjlnteehtZxtildbRJ215xOx1cZ49H_-bytr35KN-qCpjVTp1zq2LxKToTmhdXNvst4oX59b2jwNCLnEbA7W_u-dZM5m6Z4gijHxOIx_c-WJNr1cOsRC9pmJ-5GcJJPF-taIEtjQA")
+SESSION = os.getenv("SESSION")
 HNDLR = os.getenv("HNDLR", "/")
 SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
 
